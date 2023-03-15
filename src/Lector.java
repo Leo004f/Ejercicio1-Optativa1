@@ -32,18 +32,10 @@ public class Lector {
 				
 				listaVial.add(new Vial(nroHoja, tipoObjeto, IdentTramo, tipoCamino , longitud));
 					
+				Vial.imprimir(listaVial);
 				
-				System.out.println();
 			}
-			for(Vial s : listaVial) {
-				
-				System.out.println("Numero de hoja: "+s.getNroHoja());
-				System.out.println("Tipo objeto: "+s.getTipoObjeto());
-				System.out.println("identificador tramo: "+s.getIdentTramo());
-				System.out.println("Tipo camino: "+s.getTipoCamino());
-				System.out.println("Longitud: "+s.getLongitud());
-				System.out.println("\n");
-			}
+
 			lector.close();
 			linea = null;
 			partes = null;

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Vial {
 	
@@ -64,6 +65,20 @@ public class Vial {
 
 	public void setLongitud(String longitud) {
 		this.longitud = longitud;
+	}
+	
+	
+	public static void imprimir(ArrayList <Vial> v) {
+		
+		for(Vial s : v) {
+			
+			System.out.println("Numero de hoja: "+s.getNroHoja());
+			System.out.println("Tipo objeto: "+s.getTipoObjeto());
+			System.out.println("identificador tramo: "+s.getIdentTramo());
+			System.out.println("Tipo camino: "+s.getTipoCamino());
+			System.out.println("Longitud: "+s.getLongitud());
+			System.out.println("\n");
+		}
 	}
 
 
