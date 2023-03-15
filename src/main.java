@@ -3,9 +3,10 @@ public class main {
 
 	public static void main(String[] args) {
 		
-		LecturaArchivo lectura = new LecturaArchivo();
+		Lector lectura = new Lector();
 		
 		lectura.leerArchivo("C:\\Users\\lyons\\Downloads\\vial.csv");
+		
 		
 
 	}
